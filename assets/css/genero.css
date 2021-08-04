@@ -1,0 +1,26 @@
+main {
+  height: 100vh;
+}
+
+section {
+  margin-top: 3.5rem;
+}
+
+
+
+#flexbox {
+  display: flex;
+  flex-wrap: wrap;
+  gap:8rem;
+
+}
+
+.card {
+  border: 1px solid black;
+  background: white;
+  color: black;
+}
+
+.card p {
+  display: inline;
+}
