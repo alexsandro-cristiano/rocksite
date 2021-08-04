@@ -5,7 +5,7 @@
   --hue: 0;
   /* HSL color mode */
   --base-color: hsl(var(--hue), 48%, 50%);
-  --base-color-second: hsl(var(--hue) 65% 88%);
+  --base-color-second: hsla(0, 4%, 69%, 0.897);
   --base-color-alt: hsl(var(--hue) 57% 53%);
   --title-color: hsl(var(--hue), 10%, 78%);
   --text-color: hsl(0 0% 46%);
@@ -49,39 +49,12 @@ h1 {
   color: var(--title-color);
   -webkit-font-smoothing: auto;
 }
-/*
-.button {
-  color: var(--text-color-light);
-  background-color: var(--base-color);
-
-  height: 5.6rem;
-  display: inline-flex;
-  align-items: center;
-  padding: 0 3.2rem;
-  border-radius: 0.4rem;
-  font: 500 1.6rem 'Raleway', sans-serif;
-  transition: background 0.3s;
-}
-
-.button:hover {
-  background: var(--base-color-alt);
-}
-
-.divider-1 {
-  height: 1px;
-  background: linear-gradient(
-    270deg,
-    hsla(var(--hue), 36%, 57%, 1) 0%,
-    hsla(var(--hue), 65%, 88%, 0.34) 100%
-  );
-}
-*/
 
 /* ========== LAYOUT ==========*/
 
 .container {
-  margin-left: 2.4rem;
-  margin-right: 2.4rem;
+  margin-left: 5.4rem;
+  margin-right: 5.4rem;
 }
 
 #header {
@@ -129,6 +102,7 @@ nav {
 .menu li a {
   color: var(--title-color);
   padding: 1.3rem;
+  transition: 0.3s;
 }
 
 nav li a:hover {
@@ -186,7 +160,7 @@ main {
   width: 80px;
 }
 
-#history{
+#history {
   text-align: justify;
 }
 
@@ -213,44 +187,62 @@ main {
   margin-top: 4.5rem;
 }
 
-/*======= CONTEUDO - Radios =======*/
-#radios {
-  background: var(--base-color);
-  text-align: center;
-  color: var(--title-color);
-  
+#genero {
+  background: black;
+  color: var(--text-color-light);
 }
 
-#radios h2{
-  text-align: center;
+.decadas h2 {
+  margin-bottom: 5rem;
+  text-transform: uppercase;
+}
+.button-anos ul {
+  list-style: none;
+  display: flex;
+  gap: 1.6rem;
+}
+
+.button-anos a {
+  color: var(--text-color-light);
+  background-color: var(--base-color);
+
+  height: 5.6rem;
+  display: inline-flex;
+  align-items: center;
+  padding: 0 3.2rem;
+  border-radius: 0.4rem;
+  font: 500 1.6rem 'Montserrat', sans-serif;
+  transition: background 0.2s;
+}
+
+.button-anos a:hover {
+  background: var(--base-color-alt);
+}
+
+/*======= CONTEUDO - Radios =======*/
+#radios h2 {
   color: var(--title-color);
   text-transform: uppercase;
-  
-}
-
-#radios h2::after {
-  content: '';
-  display: block;
-  width: 40px;
-  height: 3px;
-  background: #fff;
-  margin: 10px auto 10px auto;
 }
 
 .gallery {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  margin-top:5rem;
-  
+  margin-top: 5rem;
 }
 
 .gallery a {
   color: var(--title-color);
   text-align: center;
   text-decoration: none;
+  transition: 0.3s;
 }
 
+.gallery a:hover {
+  color: black;
+  font-weight: 700;
+}
 
 /* ========== FOOTER ==========*/
 #footer {
