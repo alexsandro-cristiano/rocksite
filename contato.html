@@ -46,57 +46,38 @@
         <div class="grid container">
           <div id="formulario">
             <form action="#" method="post">
-              <label for="nome">Nome</label>
-              <input
-                type="text"
-                name="nome"
-                id="nome"
-                placeholder="Digite seu nome"
-                autofocus
-                required
-              />
+              <div class="campo">
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" name="nome" value="" />
+              </div>
 
-              <label for="email">E-mail</label>
-              <input
-                type="text"
-                name="email"
-                id="email"
-                placeholder="Digite seu e-mail"
-                required
-              />
+              <div class="campo">
+                <label for="email">E-mail</label>
+                <input type="text" id="email" name="email" value="" />
+              </div>
 
-              <label for="telefone">Telefone</label>
-              <input
-                type="text"
-                name="telefone"
-                id="telefone"
-                placeholder="(xx)9999-9999"
-                required
-              />
+              <div class="campo">
+                <label for="mensagem">Mensagem</label>
+                <textarea id="mensagem" name="mensagem" cols="30" rows="10">
+                </textarea>
+              </div>
 
-              <label for="message">Mensagem</label>
-              <textarea
-                name="message"
-                id="message"
-                cols="30"
-                rows="10"
-                maxlength="30"
-                required
-              ></textarea>
-
-              <input type="button" value="enviar" />
+              <button type="submit" value="Enviar" class="button">
+                Enviar
+              </button>
             </form>
           </div>
-          <div id="endereco">
+          <div id="endereco" class="container">
             <h2>Dados</h2>
-            <p>+55 21 7895-3658</p>
-            <p>contato@rocksite.com</p>
+            <p>+55 21 7895-3658
+              contato@rocksite.com
+            </p>
             <address>
               Rua Imaginação, 40 - Imaginação <br />
               Rio de Janeiro - RJ - Brasil
             </address>
           </div>
-          <div id="rede-social">
+          <div id="rede-social" class="container">
             <h2>Redes Socias</h2>
             <div class="gallery">
               <a href="https://www.facebook.com/" target="_blank" rel="external"

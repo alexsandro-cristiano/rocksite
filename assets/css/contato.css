@@ -13,37 +13,118 @@
 }
 
 .grid {
-  
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
 }
 
 #formulario {
-  border: 3px solid yellow;
   grid-column: 1;
   grid-row: 1/3;
-  
+  grid-column-start: auto;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#formulario input textarea {
+  display: block;
+}
+
+.campo {
+  margin-bottom: 1rem;
+}
+
+.campo label {
+  margin-bottom: 0.2rem;
+  display: block;
+}
+
+.campo input[type='text'],
+.campo input[type='email'],
+.campo textarea {
+  padding: 0.2em;
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 2px;
+  display: block;
+}
+
+.campo select option {
+  padding-right: 1em;
+}
+
+.campo input:focus,
+.campo select:focus,
+.campo textarea:focus {
+  background: #e0ffff;
+}
+
+.campo label.checkbox {
+  color: #000;
+  display: inline-block;
+  margin-right: 1em;
+}
+
+.campo input[type='text'],
+.campo input[type='email'],
+.campo textarea[id='mensagem'] {
+  width: 25rem;
+}
+
+.button {
+  background-color: #38d438;
+  height: 2.5rem;
+  display: inline-flex;
+  align-items: center;
+  padding: 0 3.2rem;
+  border-radius: 0.4rem;
+  font: 500 1.6rem 'Montserrat', sans-serif;
+  transition: background 0.2s;
+}
+
+.button:hover {
+  background: #13f531;
 }
 
 #endereco {
-  border: 3px solid green;
-  grid-column: 2;
-
-  margin: 0 0 3rem 3rem;
+  width: 35rem;
+  margin-bottom: 2rem;
 }
 
-#rede-social {
-  border: 3px solid blue;
-  grid-column: 2;
-  margin: 0 0 3rem 3rem;
+#endereco h2,
+#rede-social h2 {
+  color: #0e0e0e;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.6rem;
+  margin-bottom: 0.5rem;
+}
 
+#endereco p,
+#endereco address {
+  font-size: 2rem;
+  font-weight: normal;
+  line-height: 3.3rem;
+
+  margin-bottom: 2rem;
+}
+
+#endereco address {
+  font-style: normal;
+}
+
+.gallery {
+  margin-top: 0.9rem;
+  margin-left: 0;
+  justify-content: left;
+  gap: 2.5rem;
 }
 
 #rede-social img {
-  background-color: black;
-  display: inline-block;
+  background-color: #c3c5c7;
+  
   width: 50px;
   height: 50px;
-  border: 1px solid yellow;
+  border: 3px solid #db5858de;
 }
