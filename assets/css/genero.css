@@ -3,24 +3,40 @@ main {
 }
 
 section {
-  margin-top: 3.5rem;
+  margin-top: 2rem;
 }
 
-
-
-#flexbox {
+.flex {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.6rem;
   flex-wrap: wrap;
-  gap:8rem;
-
+  
 }
 
 .card {
-  border: 1px solid black;
-  background: white;
+  border: 2px solid black;
+  background: rgb(255, 255, 255);
   color: black;
+  padding: 2rem;
+
+  width: 30rem;
+  height: 40rem;
+}
+
+.card h1 {
+  margin-bottom: .9rem;
+  color:black;
+  font-weight: 400;
+}
+
+.card em {
+  margin: .8rem 0;
+  font-style: normal;
 }
 
 .card p {
-  display: inline;
+  line-height: 1.5em;
+  margin-bottom: .5rem;
 }
