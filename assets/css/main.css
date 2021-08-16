@@ -36,6 +36,10 @@ img {
 }
 
 /* ========== BASE ==========*/
+/* rolagem suave*/
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   font: 400 1.6rem 'Raleway', sans-serif;
@@ -242,6 +246,51 @@ main {
 .gallery a:hover {
   color: black;
   font-weight: 700;
+}
+
+#about {
+  background: black;
+  color: var(--text-color-light);
+}
+
+#about h2 {
+  margin-bottom: 1.5rem;
+}
+
+#about article {
+  line-height: 2.5rem;
+  font-weight: 400;
+}
+
+/* Genero ==========*/
+.grid {
+  display: grid;
+  gap: 3.2rem;
+}
+
+.cards.grid {
+  gap: 2.4rem;
+}
+
+.card {
+  padding: 5.8rem 3.2rem;
+    border-radius: 0.25rem 0.25rem 0 0;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.card .title {
+  font-size: 2.4rem;
+  margin-bottom: 1.2rem;
+}
+
+.card p{
+  line-height: 2.5rem;
 }
 
 /* ========== FOOTER ==========*/
