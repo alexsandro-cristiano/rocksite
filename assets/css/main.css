@@ -36,6 +36,10 @@ img {
 }
 
 /* ========== BASE ==========*/
+/* rolagem suave*/
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   font: 400 1.6rem 'Raleway', sans-serif;
@@ -242,6 +246,20 @@ main {
 .gallery a:hover {
   color: black;
   font-weight: 700;
+}
+
+#about {
+  background: black;
+  color: var(--text-color-light);
+}
+
+#about h2 {
+  margin-bottom: 1.5rem;
+}
+
+#about article {
+  line-height: 2.5rem;
+  font-weight: 400;
 }
 
 /* ========== FOOTER ==========*/
