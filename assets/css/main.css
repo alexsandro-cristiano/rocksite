@@ -9,6 +9,7 @@
   --text-color-light: #f3f3f3;
 
   --button-color: #a31818;
+  --logo-color: #e2524f;
 
   /*
   --body-color-escuro:#171717;
@@ -84,7 +85,7 @@ h1 {
 
 /*====  LOGO ============================ */
 .logo {
-  color: #e2524f;
+  color: var(--logo-color);
 
   font-weight: 700;
   font-size: 2.1rem;
@@ -119,7 +120,7 @@ nav .menu li a {
 }
 
 nav li a:hover {
-  color: #e2524f;
+  color: var(--logo-color);
   font-weight: 700;
   border-radius: 0.4rem;
 }
@@ -224,6 +225,12 @@ main {
   text-transform: uppercase;
 }
 
+#radio p {
+  margin: 2.5rem 0;
+  font-size: 1.8rem;
+  color: var(--text-color);
+}
+
 .gallery {
   display: flex;
   flex-wrap: wrap;
@@ -244,7 +251,7 @@ main {
 }
 
 #sobre {
-  background: var(--body-color-secund);
+  background: var(--body-color);
 }
 
 #sobre h2 {
@@ -252,8 +259,13 @@ main {
 }
 
 #sobre article {
+  margin-top: 0.9rem;
+  margin-bottom: 1rem;
+  color: var(--text-color);
+  font-size: 1.8rem;
+
+  text-indent: 1rem;
   line-height: 2.5rem;
-  font-weight: 400;
 }
 
 /* Genero ==========*/
@@ -287,17 +299,41 @@ main {
   line-height: 2.5rem;
 }
 
+#contato {
+  background: var(--body-color-secund);
+}
+
 /* ========== FOOTER ==========*/
-#footer {
-  height: 9rem;
+.grid {
+  display: grid;
+  gap: 2rem;
+}
+
+footer {
   background-color: var(--header-footer-color);
   border-top: 2px solid #f11515;
   color: var(--title-color);
+}
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
+footer i {
+  font-size: 2.5rem;
+  color: var(--title-color);
+}
+
+footer .social {
+  grid-auto-flow: column;
+  width: fit-content;
+}
+
+footer .social a {
+  transition: 0.3s;
+  display: inline-block;
+}
+
+footer .social a:hover,
+footer i:hover {
+  color: var(--logo-color);
+  transform: translateY(-5px);
 }
 
 /* ========== Media Query ==========*/
@@ -328,6 +364,21 @@ main {
   nav .icon-menu,
   nav .icon-close {
     display: none;
+  }
+
+  /* footer */
+  footer.section {
+    padding: 3.75rem 0;
+  }
+
+  footer .container {
+    grid-auto-flow: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  footer .logo {
+    font-size: 2.25rem;
   }
 }
 
@@ -406,8 +457,13 @@ main {
     gap: 1.6rem;
   }
 
-  #footer p {
-    text-align: center;
+  footer .logo {
+    display: inline-block;
+    margin-bottom: 1.5rem;
+  }
+
+  footer .brand p {
+    margin-bottom: 0.75rem;
   }
 }
 
