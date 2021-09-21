@@ -18,9 +18,7 @@
   --text-color-escuro:#bbbbbb; 
   */
 
-  /* font-size
-  Montserrat
-  Roboto */
+  /* font-size */
   font-size: 62.5%;
   --tamanho: ;
 }
@@ -121,8 +119,7 @@ nav .menu li a {
 }
 
 nav li a:hover {
-  background-color: var(--button-color);
-  color: black;
+  color: #e2524f;
   font-weight: 700;
   border-radius: 0.4rem;
 }
@@ -292,7 +289,7 @@ main {
 
 /* ========== FOOTER ==========*/
 #footer {
-  height: calc(var(--header-height) - 2rem);
+  height: 9rem;
   background-color: var(--header-footer-color);
   border-top: 2px solid #f11515;
   color: var(--title-color);
@@ -351,7 +348,7 @@ main {
     opacity: 1;
     visibility: visible;
 
-    background: var(--body-color);
+    background: var(--header-footer-color);
 
     height: 100vh;
     width: 100vw;
@@ -370,12 +367,13 @@ main {
 
   nav.show ul {
     gap: 4rem;
+    font-size: 2.5rem;
   }
 
   /* toggle menu */
   .toggle {
     color: var(--title-color);
-    font-size: 1.5rem;
+    font-size: 3.5rem;
     cursor: pointer;
   }
 
