@@ -251,7 +251,7 @@ main {
 }
 
 #sobre {
-  background: var(--body-color);
+  background: var(--body-color-secund);
 }
 
 #sobre h2 {
@@ -469,11 +469,11 @@ footer i:hover {
 
 @media (max-width: 320px) {
   #introducao h1 {
-    font-size: 1.6rem;
+    font-size: 2rem;
   }
 
   #introducao p {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
   }
 
   #footer p {
