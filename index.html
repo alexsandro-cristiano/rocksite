@@ -27,9 +27,7 @@
         <div class="menu">
           <ul>
             <li><a href="#historia">história</a></li>
-            <li><a href="#genero">gênero</a></li>
             <li><a href="#radio">rádios</a></li>
-            <li><a href="#contato">contato</a></li>
             <li><a href="#sobre">sobre</a></li>
           </ul>
         </div>
@@ -99,17 +97,15 @@
             brasileiro. O rock é do povo para o povo.
           </p>
 
-          <h3>Rock nacional pelos anos</h3>
+          <h3> Detalhes do Rock nacional</h3>
 
-          <div class="button-anos">
-            <ul>
-              <li><a href="">Anos 50</a></li>
-              <li><a href="">Anos 60</a></li>
-              <li><a href="">Anos 70</a></li>
-              <li><a href="">Anos 80</a></li>
-              <li><a href="">Anos 90</a></li>
-              <li><a href="">Anos 200</a></li>
-            </ul>
+          <div id="button-container">
+            <button id="50">Anos 50</button>
+            <button id="60">Anos 60</button>
+            <button id="70">Anos 70</button>
+            <button id="80">Anos 80</button>
+            <button id="90">Anos 90</button>
+            <button id="2000">Anos 2000</button>
           </div>
         </div>
       </section>
@@ -187,6 +183,18 @@
       </section>
     </main>
 
+    <div id="modal-overlay" class="modal-overlay invisible flex">
+      <div class="modal">
+        <div class="conteudo-modal">
+          <h2></h2>
+          <p>
+            
+          </p>
+          <a href="#rock-br" id="close-modal">voltar</a>
+        </div>
+      </div>
+    </div>
+
     <footer class="section">
       <div class="container grid">
         <div class="brand">
@@ -212,5 +220,6 @@
     <!-- scrollreveal -->
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/botoes-rock.js"></script>
   </body>
 </html>

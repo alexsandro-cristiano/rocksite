@@ -61,6 +61,59 @@ h1 {
   -webkit-font-smoothing: auto;
 }
 
+/* ========== MODAL ==========*/
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.invisible {
+  opacity: 0;
+  visibility: hidden;
+  z-index: 999;
+}
+
+.modal-overlay {
+  background-color: #000000b3;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+}
+
+.modal {
+  background-color: var(--body-color-secund);
+  padding: 2.4rem;
+  width: 90%;
+  max-width: 500px;
+  position: relative;
+  z-index: 1;
+}
+
+.conteudo-modal h2 {
+  text-align: center;
+}
+
+.conteudo-modal p {
+  margin: 2rem 0;
+  text-align: justify;
+  text-indent: 1rem;
+  line-height: 2.5rem;
+}
+
+.conteudo-modal a {
+  color: var(--text-color-light);
+  background-color: var(--button-color);
+
+  height: 2.6rem;
+  width: 100%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 3.2rem;
+  border-radius: 0.4rem;
+}
 /* ========== LAYOUT ==========*/
 
 .container {
@@ -186,7 +239,6 @@ main {
 #rock-br p {
   margin-top: 0.9rem;
   margin-bottom: 1rem;
-  color: var(--text-color);
   font-size: 1.8rem;
 
   text-indent: 1rem;
@@ -197,23 +249,19 @@ main {
   background: var(--body-color-secund);
 }
 
-.button-anos {
+#button-container {
   margin-top: 2.5rem;
-}
-
-.button-anos ul {
-  list-style: none;
+  border: none;
   display: flex;
   flex-wrap: wrap;
-  gap: 1.6rem;
+  gap: 2.6rem;
 }
 
-.button-anos a {
+#button-container button {
   color: var(--text-color-light);
   background-color: var(--button-color);
 
   height: 5.6rem;
-  display: inline-flex;
   align-items: center;
   padding: 0 3.2rem;
   border-radius: 0.4rem;
@@ -449,12 +497,16 @@ footer i:hover {
     font-size: 1.6rem;
   }
 
-  .button-anos ul {
-    list-style: none;
+  #button-container {
+    border: none;
     display: flex;
-    flex-wrap: wrap;
-    max-width: 800px;
-    gap: 1.6rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .gallery a {
+    margin-left: 1.5rem;
+    margin-bottom: 2.5rem;
   }
 
   footer .logo {
