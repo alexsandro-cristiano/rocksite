@@ -2,7 +2,7 @@
   --header-height: 7.5rem;
 
   --body-color: #f3f3f3;
-  --bodyd-color: #e7e7e7;
+  --dois-color: #e7e7e7;
   --hf-color: #3d3b3c;
   --title-color: #bdb9b9;
   --text-color: #4e4c4c;
@@ -75,7 +75,7 @@ h1 {
 }
 
 .modal {
-  background-color: var(--bodyd-color);
+  background-color: var(--dois-color);
   padding: 2.4rem;
   width: 90%;
   max-width: 500px;
@@ -116,7 +116,7 @@ h1 {
 
 /* ========== LAYOUT PARA BOTAO DARK ==========*/
 
-input[type=checkbox]{
+input[type='checkbox'] {
   height: 0;
   width: 0;
   visibility: hidden;
@@ -133,7 +133,7 @@ label {
   position: relative;
 }
 
-label::after{
+label::after {
   content: '';
   position: absolute;
   top: 3px;
@@ -157,7 +157,6 @@ input:checked + label::after {
 label:active:after {
   width: 45px;
 }
-
 
 /* ========== HEADER ==========*/
 
@@ -284,7 +283,7 @@ main {
 }
 
 #rock-br {
-  background: var(--bodyd-color);
+  background: var(--dois-color);
 }
 
 #button-container {
@@ -337,7 +336,7 @@ main {
 }
 
 #sobre {
-  background: var(--bodyd-color);
+  background: var(--dois-color);
 }
 
 #sobre h2 {
@@ -386,7 +385,7 @@ main {
 }
 
 #contato {
-  background: var(--bodyd-color);
+  background: var(--dois-color);
 }
 
 /* ========== FOOTER ==========*/
