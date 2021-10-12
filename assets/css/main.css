@@ -2,22 +2,14 @@
   --header-height: 7.5rem;
 
   --body-color: #f3f3f3;
-  --body-color-secund: #e7e7e7;
-  --header-footer-color: #3d3b3c;
+  --bodyd-color: #e7e7e7;
+  --hf-color: #3d3b3c;
   --title-color: #bdb9b9;
   --text-color: #4e4c4c;
-  --text-color-light: #f3f3f3;
+  --textol-color: #f3f3f3;
 
   --button-color: #a31818;
   --logo-color: #e2524f;
-
-  /*
-  --body-color-escuro:#171717;
-  --body-color-escuro-secund:#27292D;
-  --header-footer-color-escuro:#070707;
-  --title-color-escuro:#dddddd;
-  --text-color-escuro:#bbbbbb; 
-  */
 
   /* font-size */
   font-size: 62.5%;
@@ -83,7 +75,7 @@ h1 {
 }
 
 .modal {
-  background-color: var(--body-color-secund);
+  background-color: var(--bodyd-color);
   padding: 2.4rem;
   width: 90%;
   max-width: 500px;
@@ -103,7 +95,7 @@ h1 {
 }
 
 .conteudo-modal a {
-  color: var(--text-color-light);
+  color: var(--textol-color);
   background-color: var(--button-color);
 
   height: 2.6rem;
@@ -114,12 +106,58 @@ h1 {
   padding: 0 3.2rem;
   border-radius: 0.4rem;
 }
+
 /* ========== LAYOUT ==========*/
 
 .container {
   margin-left: 1.5rem;
   margin-right: 1.5rem;
 }
+
+/* ========== LAYOUT PARA BOTAO DARK ==========*/
+
+input[type=checkbox]{
+  height: 0;
+  width: 0;
+  visibility: hidden;
+}
+
+label {
+  cursor: pointer;
+  text-indent: -9999px;
+  width: 52px;
+  height: 27px;
+  background: #111111;
+  float: right;
+  border-radius: 100px;
+  position: relative;
+}
+
+label::after{
+  content: '';
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 20px;
+  height: 20px;
+  background-color: #f11515;
+  border-radius: 90px;
+  transition: 0.3s;
+}
+
+input:checked + label {
+  background-color: white;
+}
+
+input:checked + label::after {
+  left: calc(100% - 5px);
+  transform: translateX(-100%);
+}
+
+label:active:after {
+  width: 45px;
+}
+
 
 /* ========== HEADER ==========*/
 
@@ -133,7 +171,7 @@ h1 {
   top: 0;
   left: 0;
   z-index: 100;
-  background-color: var(--header-footer-color);
+  background-color: var(--hf-color);
 }
 
 /*====  LOGO ============================ */
@@ -202,7 +240,7 @@ main {
 #introducao h1,
 #introducao p {
   text-align: center;
-  color: var(--text-color-light);
+  color: var(--textol-color);
 }
 
 #introducao h1 {
@@ -219,7 +257,7 @@ main {
   display: block;
   width: 40px;
   height: 3px;
-  background: var(--text-color-light);
+  background: var(--textol-color);
   margin: 14px auto 10px auto;
 }
 
@@ -246,7 +284,7 @@ main {
 }
 
 #rock-br {
-  background: var(--body-color-secund);
+  background: var(--bodyd-color);
 }
 
 #button-container {
@@ -258,7 +296,7 @@ main {
 }
 
 #button-container button {
-  color: var(--text-color-light);
+  color: var(--textol-color);
   background-color: var(--button-color);
 
   height: 5.6rem;
@@ -299,7 +337,7 @@ main {
 }
 
 #sobre {
-  background: var(--body-color-secund);
+  background: var(--bodyd-color);
 }
 
 #sobre h2 {
@@ -348,7 +386,7 @@ main {
 }
 
 #contato {
-  background: var(--body-color-secund);
+  background: var(--bodyd-color);
 }
 
 /* ========== FOOTER ==========*/
@@ -358,7 +396,7 @@ main {
 }
 
 footer {
-  background-color: var(--header-footer-color);
+  background-color: var(--hf-color);
   border-top: 2px solid #f11515;
   color: var(--title-color);
 }
@@ -447,7 +485,7 @@ footer i:hover {
     opacity: 1;
     visibility: visible;
 
-    background: var(--header-footer-color);
+    background: var(--hf-color);
 
     height: 100vh;
     width: 100vw;
